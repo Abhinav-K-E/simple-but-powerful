@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    box-shadow: 2px 2px 20px rgba(100, 100, 100, 0.568);
+    background: linear-gradient(135deg ,red,cyan);
+
+    /*animation-property*/
+    animation: bounce 0.5s cubic-bezier(0.8,0,1,1) infinite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+@keyframes bounce {
+    100%{
+        margin-top:30px
+    }
+}
+
