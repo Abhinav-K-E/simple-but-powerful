@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: cadetblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.navbar{
+    width: 600px;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+.navbar ul{
+    display: flex;
+    
+}
+
+.navbar ul li{
+    margin-right: 40px;
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/*Animation starting*/
+
+.navbar ul li{
+    display: inline;
+    position: relative;
+    color: cyan;
+}
+
+.navbar li::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: cyan;
+    /*transform-origin: bottom left;*/
+    transform-origin:center ;
+    transition: transform 0.5s ease-out;
+}
+
+.navbar li:hover:after {
+    transform: scaleX(1);
+    /*transform-origin: bottom left;*/
+    transform-origin: center;
+}
+
+
+.navbar-2{
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+.navbar-2 ul{
+    display: flex;
+    
+}
+
+.navbar-2 ul li{
+    margin-right: 40px;
+    list-style: none;
+}
+
+.navbar-2 a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/*Animation starting*/
+
+.navbar-2 ul li{
+    display: inline;
+    position: relative;
+    color: cyan;
+}
+
+.navbar-2 li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: cyan;
+    transform-origin: bottom left;
+    /*transform-origin:center ;*/
+    transition: transform 0.5s ease-out;
+}
+
+.navbar-2 li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    /*transform-origin: center;*/
+}
