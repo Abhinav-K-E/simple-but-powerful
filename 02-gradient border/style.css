@@ -1,0 +1,38 @@
+body{
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pic{
+    margin: 30px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 8px;
+    background: linear-gradient(130deg ,red ,blue 50%,transparent 50%);
+    background-size: 250%;
+    background-position: 100% 100%;
+    transition: background 0.6s;
+}
+
+.pic:hover{
+    background-position: 0% 0%;
+}
+
+.pic01{
+    width: 200px;
+    margin: 30px;
+    border-radius: 50%;
+    padding: 8px;
+    background: transparent;
+    background-size: 250%;
+    background-position: 100% 100%;
+}
+
+.pic01:hover{
+    background-position: 0% 0%;
+    background:  cyan;
+    transition: background 0.6s;
+}
