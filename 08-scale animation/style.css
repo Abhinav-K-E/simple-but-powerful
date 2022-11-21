@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    height: 100%;
+    width: 10px;
+    background-color: black;
+}
+
+.right{
+    height: 100%;
+    width: 10px;
+    background-color: black;
+}
+
+svg{
+    position: absolute;
+    top: -27px;
+    z-index: -5;
+    right: -30px;
+    opacity: 0;
+}
+
+.card::after{
+    content:'';
+    background: url(./car.jpg);
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    
+}
+
+.card:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: transform 1.3s;
+}
+
+.card:hover svg{
+    opacity: 1;
+    z-index: 0;
+    transition: all 1.4s;
+}
